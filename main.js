@@ -68,7 +68,7 @@ let matchEvery = names.every(name => name.length === 4)
 
 console.log(matchEvery);
 
-// From
+// Array.From
 // Takes three parameters, arrayLike an array-like object to convert to an array(convert the first params into an array)
 // use map function to call every element in the created array
 // A value to use as this when executing the function
@@ -80,3 +80,35 @@ let resultFrom = Array.from('abcdefgh'); // First parameters testing changes obj
 resultFrom = Array.from([1,2,3], x => x + x); //  A map function that evaluates every item in the array by addind itself and returning the value in an array.   
 
 console.log(resultFrom);
+
+
+// Array.of similar to Array constructor (new Array())
+// Returns an array of all arguments passed into it
+
+let numbers = Array.of(2,3,3, 'abc' )
+
+console.log(numbers);
+
+// findIndex
+// Returns the first index of the value that meets the conditions
+
+let match = names.findIndex(name => name.length === 3)
+console.log(match);
+
+// Keys()
+// Returns a new Array ITERATOR object that contains keys for each Index of an array
+
+let keys = names.keys()
+
+for (let key of keys) {
+    console.log('key:',key)
+}
+
+// Array.values()
+// returns a new Array object that contains the values for each index in the array.
+
+let values = names.values()
+
+for (let value of values) {
+    console.log('value:',value)
+}
