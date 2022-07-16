@@ -21,7 +21,7 @@ names.forEach(name => console.log(name));
 
 
 // Map
-// Loops through each item of the array same as forEach but returns the value of every the loop item in array
+// Loops through each item of the array same as forEach but returns the value of every item in array
 
 let isNameEqualThree = names.map(name => name.length === 3 ? name : false);
 console.log(isNameEqualThree);
